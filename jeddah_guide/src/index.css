@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body{
+  text-align: center;
+}
+
+.logo{
+  text-align: left;
+}
+​
+.appLogo{
+  padding-right: 20px;
+  display: inline-block;
+  margin: 20px;
+}
+​
+nav{
+  float: right;
+  font-size: 20px;
+  margin:20px;
+  font-weight: bold;
+}
+
+.navigation{
+  float: right;
+}
