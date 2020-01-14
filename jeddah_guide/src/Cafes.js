@@ -1,26 +1,54 @@
 import React, { Component } from 'react';
+import Display from './Display'
+import { Card } from 'react-bootstrap/';
 
 
-class Cafes extends Component {
+class Restaurant extends Component {
 
+    constructor(props) {
+        super(props)
+        this.state = {
+            itemToDisplay: '',
+            onDisplay:" "
+        }
+        this.setDisplayItem = this.setDisplayItem.bind(this)
+
+    }
+
+    setDisplayItem(item) {
+
+        this.setState({
+            itemToDisplay: item,
+            onDisplay: <Display displayItem={item}></Display>
+        })
+    }
 
     render() {
 
         const cafes = (this.props.list).map((cafe, index) => {
-            return <div key={index}>
-                <h4>{cafe.name}</h4>
-                <img src={cafe.imgSrc}></img>
-                <p className='description'>{cafe.description}</p>
+
+            return <div key={index} className='Card'>
+                <Card style={{ width: '15rem' }}>
+                    <Card.Img onClick={() => this.setDisplayItem(cafe)} variant="top" src={cafe.imgSrc} width="250" height="250" />
+                    <Card.Body>
+                    <button id="linkButton" onClick={() => this.setDisplayItem(cafe)}> {cafe.name} </button> 
+                         {/* <button id="linkButton">Click</button> */}
+                    </Card.Body>
+                </Card>
             </div>
         })
 
         return (
             <div>
                 <h1>Cafes</h1>
-                {cafes}
+                <div className='CardCont'>
+                    {cafes}
+                </div>
+                
+                {this.state.onDisplay}
+                
             </div>
         )
-
     }
 }
-export default Cafes;
+export default Restaurant;
