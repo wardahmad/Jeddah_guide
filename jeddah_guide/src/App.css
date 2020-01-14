@@ -2,9 +2,76 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.navDark {
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+} 
+
+.Navbar{
+  display:flex;
+}
+
+/* .NavJed{
+  flex-direction: column;
+  justify-content: center;
+} */
+
+.AppIc{
+  justify-content: flex-start;
+  margin-left: 0;
+  
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 0 !important;
+  margin-right: auto;
+  margin-left: 0 !important;
+}
+
+.HomeIcon{
+  justify-content: flex-end;
+  
+  }
+
+.navbar-brand {
+  display: inline-block;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+}
+
+.navbar-dark .navbar-brand {
+  color: #fff;
+}
+
+ .nav-link {
+  color: rgb(216, 216, 216) !important;
+}
+
+.nav-link.active,
+.nav-link:hover {
+  color: #fdd86a !important;
+}
+
+.CardCont{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.card-body{
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  margin: 10px 0px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
