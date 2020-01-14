@@ -13,10 +13,11 @@ import Places from './Places';
 import Restaurant from './Restaurant';
 import guide from './DB'
 import NavbarMain from './Navbar'
+import Display from './Display'
 
 class App extends Component {
   render() {
-    const restaurant = guide.filter(obj => obj.listName === 'bestRestaurants')[0].list;
+    const restaurants = guide.filter(obj => obj.listName === 'bestRestaurants')[0].list;
     const cafes = guide.filter(obj => obj.listName === 'bestCafes')[0].list;
     const places = guide.filter(obj => obj.listName === 'bestPlaces')[0].list;
     const hotels = guide.filter(obj => obj.listName === 'bestHotels')[0].list;
@@ -34,7 +35,7 @@ class App extends Component {
       <Card style={{ width: '18rem'}}>
       <Card.Img variant="top" src="https://live.staticflickr.com/65535/49355477498_f6e6edb02b_m.jpg" width="250" height="250" />
      <Card.Body>
-     <Link to="/Restaurant"><Card.Title>Restaurants</Card.Title></Link>
+     <Link to="/restaurants"><Card.Title>Restaurants</Card.Title></Link>
      </Card.Body>
      </Card>
      </div>
@@ -70,15 +71,16 @@ class App extends Component {
 
 
 
-         
-
+    
 
     </div>
 
-    <Route path="/Restaurant" component={() => <Restaurant list={restaurant} />} />
+    <Route exact path="/restaurants" component={() => <Restaurant list={restaurants} />} />
     <Route path="/cafes" component={() => <Cafes list={cafes} />} />
     <Route path="/places" component={() => <Places list={places} />} />
     <Route path="/hotels" component={() => <Hotels list={hotels} />} />
+    <Route path="/restaurant/:id" component={() => <Display list={Display} />} />
+
     </Router>
 
     )
