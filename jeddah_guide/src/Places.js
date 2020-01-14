@@ -1,26 +1,54 @@
 import React, { Component } from 'react';
+import Display from './Display'
+import { Card } from 'react-bootstrap/';
 
 
-class Places extends Component {
+class Restaurant extends Component {
 
+    constructor(props) {
+        super(props)
+        this.state = {
+            itemToDisplay: '',
+            onDisplay:" "
+        }
+        this.setDisplayItem = this.setDisplayItem.bind(this)
+
+    }
+
+    setDisplayItem(item) {
+
+        this.setState({
+            itemToDisplay: item,
+            onDisplay: <Display displayItem={item}></Display>
+        })
+    }
 
     render() {
 
-        const places = (this.props.list).map((places, index) => {
-            return <div key={index}>
-                <h4>{places.name}</h4>
-                <img src={places.imgSrc}></img>
-                <p className='description'>{places.description}</p>
+        const places = (this.props.list).map((place, index) => {
+
+            return <div key={index} className='Card'>
+                <Card style={{ width: '15rem' }}>
+                    <Card.Img onClick={() => this.setDisplayItem(place)} variant="top" src={place.imgSrc} width="250" height="250" />
+                    <Card.Body>
+                    <button id="linkButton" onClick={() => this.setDisplayItem(place)}> {place.name} </button> 
+                         {/* <button id="linkButton">Click</button> */}
+                    </Card.Body>
+                </Card>
             </div>
         })
 
         return (
             <div>
                 <h1>Places</h1>
-                {places}
+                <div className='CardCont'>
+                    {places}
+                </div>
+                
+                {this.state.onDisplay}
+                
             </div>
         )
-
     }
 }
-export default Places;
+export default Restaurant;
