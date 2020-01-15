@@ -30,7 +30,7 @@ class Restaurant extends Component {
 
             return <div key={index} className='Card'>
                 <Card style={{ width: '15rem' }}>
-                    <Card.Img onClick={() => this.setDisplayItem(restaurant)} variant="top" src={restaurant.imgSrc} width="250" height="250" />
+                    <Card.Img onClick={() => this.setDisplayItem(restaurant)} variant="top" src={restaurant.imgSrc[0]} width="250" height="250" />
                     <Card.Body>
                     <button id="linkButton" onClick={() => this.setDisplayItem(restaurant)}> {restaurant.name} </button> 
                          {/* <button id="linkButton">Click</button> */}
@@ -41,7 +41,7 @@ class Restaurant extends Component {
 
         return (
             <div>
-                <h1>Restaurants</h1>
+                
                 <div className='CardCont'>
                     {restaurants}
                 </div>

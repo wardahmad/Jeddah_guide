@@ -3,7 +3,7 @@ import Display from './Display'
 import { Card } from 'react-bootstrap/';
 
 
-class Restaurant extends Component {
+class Activities extends Component {
 
     constructor(props) {
         super(props)
@@ -25,13 +25,13 @@ class Restaurant extends Component {
 
     render() {
 
-        const hotels = (this.props.list).map((hotel, index) => {
+        const activities = (this.props.list).map((activity, index) => {
 
             return <div key={index} className='Card'>
                 <Card style={{ width: '15rem' }}>
-                    <Card.Img onClick={() => this.setDisplayItem(hotel)} variant="top" src={hotel.imgSrc[0]} width="250" height="250" />
+                    <Card.Img onClick={() => this.setDisplayItem(activity)} variant="top" src={activity.imgSrc[0]} width="250" height="250" />
                     <Card.Body>
-                    <button id="linkButton" onClick={() => this.setDisplayItem(hotel)}> {hotel.name} </button> 
+                    <button id="linkButton" onClick={() => this.setDisplayItem(activity)}> {activity.name} </button> 
                          {/* <button id="linkButton">Click</button> */}
                     </Card.Body>
                 </Card>
@@ -42,7 +42,7 @@ class Restaurant extends Component {
             <div>
                 
                 <div className='CardCont'>
-                    {hotels}
+                    {activities}
                 </div>
                 
                 {this.state.onDisplay}
@@ -51,4 +51,4 @@ class Restaurant extends Component {
         )
     }
 }
-export default Restaurant;
+export default Activities;

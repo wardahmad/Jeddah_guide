@@ -6,9 +6,7 @@ class ShowCarousel extends Component {
     render() {
 
         //replace this with the array of the item.
-        var images = [this.props.currentItem.imgSrc,
-            "http://www.hospitalitynewsmag.com/wp-content/uploads/2019/06/JeddahBanner-1024x466.jpg",
-            "https://www.webuildvalue.com/static/upload/ar-/ar-rahmah-mosque--jeddah.jpg"]
+        var images = this.props.currentItem.imgSrc
 
         const list = (images).map((image, index) => {
             return <Carousel.Item key={index}>

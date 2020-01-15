@@ -53,3 +53,8 @@ nav{
   color: #069;
   cursor: pointer;
 }
+
+body{
+  background-image: url("https://i.postimg.cc/Jh6Hx2d7/Image-from-i-OS.png");
+  background-attachment: fixed;
+}

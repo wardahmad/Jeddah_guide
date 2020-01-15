@@ -49,7 +49,7 @@ const guide=[
         listName: 'bestCafes',
     
     list: [{
-        list: "Medd Cafe",
+        name: "Medd Cafe",
         description: "First specialty coffee in Jeddah",
         imgSrc: ["https://lh3.googleusercontent.com/p/AF1QipMofM9YcsgW_XEo4Y_9VEbSiTw7gSt8AzuiBYCP=s0","https://lh3.googleusercontent.com/p/AF1QipPMrgRrbYdx0bq82zJem_C2X4BOk__U408W1cFr=s0","https://lh3.googleusercontent.com/p/AF1QipOrOOjNyxYK1CTy_xiAt91npdPn15WOIQR7GmO6=s0"],
     },

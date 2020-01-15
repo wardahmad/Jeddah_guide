@@ -10,8 +10,15 @@ class Display extends Component {
     render() {
 
         return (
-           
-                <Card style={{ width: '18rem'}}>
+        //     <div>
+        //        <div>
+        //        {this.props.displayItem.name}
+        //        <ShowCarousel currentItem={this.props.displayItem}></ShowCarousel>
+        //        {this.props.displayItem.description}
+        //        {console.log(this.props.restaurant)}
+        //        </div>
+        //    </div>
+                <Card style={{ width: '40rem'}}>
                 <Card.Title><h2>{this.props.displayItem.name}</h2> </Card.Title>
                 <Card.Body>
                 {/* <img src={this.props.restaurant.imgSrc}></img>  //old single picture */}
