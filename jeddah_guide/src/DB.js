@@ -25,9 +25,9 @@ const guide=[
      {
         listName: 'bestRestaurants',
          list: [{
-        name: "Albaik",
+        name: "Angelina",
         description: "Best fast food restaurant in Jeddah",
-        imgSrc: ["https://live.staticflickr.com/2949/15313593077_e9940bf6b2_b.jpg","https://lh3.googleusercontent.com/p/AF1QipPgZC21mCa6Vw5BWFm69AbpjrzplKQUwFvVNcsG=s0","https://lh3.googleusercontent.com/p/AF1QipP7U1565if3VRyuayFD3lt2Tvbu5sl6liki5Jv3=s0"],
+        imgSrc: ["https://lh3.googleusercontent.com/p/AF1QipNkeXa2-0k95OwR0Hvdda1e7aGoI2YqPDPhqIZb=s0","https://lh3.googleusercontent.com/p/AF1QipPUQHGHCFF0W6xgWbPX7BYeSiXODKZGklfeQZng=s0","https://lh3.googleusercontent.com/p/AF1QipOTbIjD9PSRRZdeOYvUXhoQhTgyC4PY92VssOpr=s0"],
     },
     {
         name: "Lusin",
