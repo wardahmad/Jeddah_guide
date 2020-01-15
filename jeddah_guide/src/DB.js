@@ -110,7 +110,7 @@ const guide=[
         imgSrc: ["https://i1.wp.com/www.agoda.com/wp-content/uploads/2019/05/Things-to-do-in-Jeddah-Saudi-Arabia-SCUBA-PADI-diving-Obhur-Beach.jpg","https://www.abouther.com/sites/default/files/2018/09/03/main23453443.jpg","https://serviis.files.wordpress.com/2018/02/shutterstock_1014053944.jpg?w=1000&h=563&crop=1"],
     },
     {
-        name: "Bicycling at Jeddah Waterfront",
+        name: "Bicycling",
         description: "At the Jeddah Waterfront, enjoy riding the bicycles while enjoying the sea view.",
         imgSrc: ["https://content2.seesaudi.sa/Images/2016/09/14/WaterMark/166496.jpg","https://rideukbmx.com/wp-content/uploads/2018/03/fise-jeddah-action-sports-festival-2018-drummond-16x9_1.jpg","https://cdn.platinumlist.net/upload/event/bicycle_parade_1970_jan_01_jeddah_waterfront_75845-full1561563900.jpg"],
     }]}

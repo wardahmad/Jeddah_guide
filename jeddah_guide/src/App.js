@@ -32,49 +32,50 @@ class App extends Component {
 
 
    <div className='CardCont'>
-          
-     <div className='Card1'>
-      <Card style={{ width: '18rem'}}>
-      <Card.Img variant="top" src="https://live.staticflickr.com/65535/49355477498_f6e6edb02b_m.jpg" width="250" height="250" />
+         
+   <div className='Card1'>
+      <Card style={{ width: '15rem'}}>
+      <Card.Img variant="top" src="https://i.postimg.cc/zGfYvvSV/image.png" width="250" height="250" />
      <Card.Body>
-     <Link to="/restaurants"><Card.Title>Restaurants</Card.Title></Link>
+     <Link to="/Restaurant"><Card.Title>Restaurants <img src={'https://i.postimg.cc/mD1NKHqH/cutlery.png'} width="40" height="40" /></Card.Title></Link>
      </Card.Body>
      </Card>
      </div>
  
 
      <div className='Card2'>
-     <Card style={{ width: '18rem'}}>
-      <Card.Img variant="top" src="https://live.staticflickr.com/65535/49356142842_5d5f5f1198_m.jpg" width="250" height="250"  />
+     <Card style={{ width: '15rem'}}>
+      <Card.Img variant="top" src="https://r1.ilikewallpaper.net/pic/201702/papers_co_nn75_coffe_barista_art_bokeh_6_wallpaper_640.jpg" width="250" height="250"  />
      <Card.Body>
-     <Link to="/cafes"><Card.Title>Cafe's</Card.Title></Link>
+     <Link to="/cafes"><Card.Title>Cafe's <img src={'https://i.postimg.cc/GtdwXGhc/food-and-restaurant.png'} width="40" height="40" /></Card.Title></Link>
      </Card.Body>
      </Card>
      </div>
 
      <div className='Card3'>
-     <Card style={{ width: '18rem'}}>
-      <Card.Img variant="top" src="https://live.staticflickr.com/65535/49355477153_e4cb13eb6b_m.jpg" width="250" height="250" />
+     <Card style={{ width: '15rem'}}>
+      <Card.Img variant="top" src="https://3.bp.blogspot.com/-1kbp75rwvsY/WkYWiJE73HI/AAAAAAAAA0I/wKCBFDbXd0M3X4PUI4joJty8WA2S_EUZgCPcBGAYYCw/s1600/IMG_4501.JPG" width="250" height="250" />
      <Card.Body>
-     <Link to="/places"><Card.Title>Places</Card.Title></Link>
+     <Link to="/places"><Card.Title>Places <img src={'https://i.postimg.cc/FKVQ3YG0/place.png'} width="40" height="40" /></Card.Title></Link>
      </Card.Body>
      </Card>
      </div>
      
      <div className='Card4'>
-     <Card style={{ width: '18rem'}}>
+     <Card style={{ width: '15rem'}}>
       <Card.Img variant="top" src="https://live.staticflickr.com/65535/49356142872_e84b35fc65_n.jpg" width="250" height="250" />
      <Card.Body>
-     <Link to="/hotels"><Card.Title>Hotels</Card.Title></Link>
+     <Link to="/hotels"><Card.Title>Hotels <img src={'https://i.postimg.cc/ry9y4FQ1/sleeping.png'} width="40" height="40" /></Card.Title></Link>
      </Card.Body>
      </Card>
      </div>
 
+
      <div className='Card5'>
-     <Card style={{ width: '18rem'}}>
+     <Card style={{ width: '15rem'}}>
       <Card.Img variant="top" src="https://lh3.googleusercontent.com/p/AF1QipPi9gXuQG_UlrD57E2kobHU6o5wKnzwVxbubrKT=s0" width="250" height="250" />
      <Card.Body>
-     <Link to="/activities"><Card.Title>Activities</Card.Title></Link>
+     <Link to="/activities"><Card.Title>Activities <img src={'https://i.postimg.cc/NMJ70D1z/birthday-and-party.png'} width="40" height="40" /></Card.Title></Link>
      </Card.Body>
      </Card>
      </div>

@@ -6,7 +6,7 @@ import {
 } from "reactstrap";
 import "../src/App.css";
 
-
+ 
 class NavbarMain extends React.Component {
   constructor(props) {
     super(props);
