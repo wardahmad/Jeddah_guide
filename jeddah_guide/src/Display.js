@@ -12,9 +12,9 @@ class Display extends Component {
         return (
             <div className="contDis">
                <div>
-               {this.props.displayItem.name}
+               <h3 className="displayH3">{this.props.displayItem.name}</h3>
                <ShowCarousel currentItem={this.props.displayItem}></ShowCarousel>
-               {this.props.displayItem.description}
+               <p className="displayPar">{this.props.displayItem.description}</p>
                {console.log(this.props.restaurant)}
                </div>
            </div>

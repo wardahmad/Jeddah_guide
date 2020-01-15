@@ -28,7 +28,7 @@ class Restaurant extends Component {
         const places = (this.props.list).map((place, index) => {
 
             return <div key={index} className='Card'>
-                <Card style={{ width: '15rem' }}>
+                <Card style={{ width: '15rem', margin: '2px', marginBottom: '30px' }} className="cardHov">
                     <Card.Img onClick={() => this.setDisplayItem(place)} variant="top" src={place.imgSrc[0]} width="250" height="250" />
                     <Card.Body>
                     <button id="linkButton" onClick={() => this.setDisplayItem(place)}> {place.name} </button> 

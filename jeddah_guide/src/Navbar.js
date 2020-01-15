@@ -13,7 +13,9 @@ class NavbarMain extends React.Component {
 
     this.toggle = this.toggle.bind(this);
     this.state = {
-      isOpen: false
+      isOpen: false,
+      wether: '',
+      icon: ''
     };
   }
   toggle() {
@@ -21,6 +23,17 @@ class NavbarMain extends React.Component {
       isOpen: !this.state.isOpen
     });
   }
+  //////////
+  componentDidMount() { 
+    fetch('http://api.openweathermap.org/data/2.5/weather?q=Jeddah&APPID=cbc315d131ff02c7286354ef49784966&units=metric')
+    .then(res => res.json())
+    .then((data) => {
+      var link = "http://openweathermap.org/img/wn/".concat( data.weather[0].icon + ".png");
+      this.setState({ wether: data.main.temp,icon: link })
+    })
+    .catch(console.log)
+  }
+  ///////////
   render() {
       return (
         <div>
@@ -36,7 +49,7 @@ class NavbarMain extends React.Component {
             </Container>
             
             <div className='HomeIcon'>
-            <NavbarBrand href="/"> <img src={'https://i.postimg.cc/13rtY39H/home.png'} width="35" height="35" /></NavbarBrand>
+            <NavbarBrand href="/">{this.state.wether}°<img src={this.state.icon}/> <img src={'https://i.postimg.cc/13rtY39H/home.png'} width="35" height="35" /></NavbarBrand>
             </div>
             
         </Navbar>

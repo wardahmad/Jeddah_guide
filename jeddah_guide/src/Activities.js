@@ -28,7 +28,7 @@ class Activities extends Component {
         const activities = (this.props.list).map((activity, index) => {
 
             return <div key={index} className='Card'>
-                <Card style={{ width: '15rem' }}>
+                <Card style={{ width: '15rem', margin: '2px', marginBottom: '30px' }} className="cardHov">
                     <Card.Img onClick={() => this.setDisplayItem(activity)} variant="top" src={activity.imgSrc[0]} width="250" height="250" />
                     <Card.Body>
                     <button id="linkButton" onClick={() => this.setDisplayItem(activity)}> {activity.name} </button> 
