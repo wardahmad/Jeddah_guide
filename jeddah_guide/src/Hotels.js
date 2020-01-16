@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Display from './Display'
 import { Card } from 'react-bootstrap/';
 
-class Restaurant extends Component {
+class Hotels extends Component {
 
     constructor(props) {
         super(props)
@@ -53,4 +53,4 @@ class Restaurant extends Component {
         )
     }
 }
-export default Restaurant;
+export default Hotels;
