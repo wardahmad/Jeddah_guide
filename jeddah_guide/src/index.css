@@ -59,3 +59,27 @@ body{
   background-image: url("https://i.postimg.cc/Jh6Hx2d7/Image-from-i-OS.png");
   background-attachment: fixed;
 }
+
+.mapDiv{
+  width:800px;
+  height: 400px;
+  border: 2px solid black;
+  margin-bottom: 20px;
+}
+
+.displayContainer{
+  display: flex;
+  margin-left: 200px;
+  margin-right: 200px;
+  justify-content: center;
+  text-align: center;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.contChild{
+  display: flex;
+  justify-content: center;
+
+}
+
