@@ -1,9 +1,9 @@
 
-<img align="center" src="logo-aa-2.png">
+<img align="center" src="images/logo-aa-2.png">
 
 ### GA's SEI Course Project #3: React Application
 # Jeddah Guide 
-<img align="center" src="Jeddah_Guide_Logo.PNG"></img>
+<img align="center" src="images/Jeddah_Guide_Logo.png"></img>
 
 ## App Features
 * Provide the user with navigation menu supported with an image to view pages showing different kinds of places (Restaurants, hotels, cafes ..etc)
